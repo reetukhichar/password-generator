@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5f6116d8de.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="heading">
+                <i class="fa-solid fa-lock"></i>
+                <h1>Password Generator</h1>
+            </div>
+            <div class="show-pass-div">
+                <p id="password">efmefnei</p>
+            </div>
+            <div class="password-length">
+                <p>Password Length <span id="password-length">8</span></p>
+                <input type="range" min="1" max="20" value="8" class="slider" id="range-input"/>
+            </div>
+            <div class="password-type">
+                <div class="uppercase" >
+                    <label>Include Uppercase</label>
+                    <input type="checkbox" id="upper"/>
+                </div>
+                <div class="numbers" >
+                    <label>Include Numbers</label>
+                    <input type="checkbox" id="numeric"/>
+                </div>
+                <div class="symbols" >
+                    <label>Include Symbols</label>
+                    <input type="checkbox" id="symbol"/>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn" id="gen-pass-btn">Generate Password</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
